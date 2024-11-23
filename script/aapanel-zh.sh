@@ -35,11 +35,11 @@ bash "/root/bt-install.sh"
 
 # 降级aapanel GitHub下载 (最后一个无广告版本)
 function downgrade-aapanel(){
-wget -O "/root/LinuxPanel_EN-6.8.23.zip" "https://ghproxy.com/https://github.com/AaronYES/aapanel/releases/download/1.0/LinuxPanel_EN-6.8.23.zip"
+wget -O "/root/LinuxPanel_EN-6.8.23.zip" "https://github.com/AaronYES/aapanel/releases/download/1.0/LinuxPanel_EN-6.8.23.zip"
 red "下载完成,正在降级."
 unzip LinuxPanel_EN-6.8.23.zip
 cd /root/panel
-wget -O "/root/panel/downgrade.sh" "https://ghproxy.com/https://raw.githubusercontent.com/AaronYES/aapanel/main/script/downgrade.sh" 
+wget -O "/root/panel/downgrade.sh" "https://raw.githubusercontent.com/AaronYES/aapanel/main/script/downgrade.sh" 
 bash "/root/panel/downgrade.sh"
 red "降级成功."
 rm /root/LinuxPanel_EN-6.8.23.zip /root/panel/ -rf
@@ -47,7 +47,7 @@ rm /root/LinuxPanel_EN-6.8.23.zip /root/panel/ -rf
 
 ## 降级宝塔面板
 function downgrade-bt(){
-wget -O "/root/LinuxPanel-7.7.0.zip" "https://ghproxy.com/https://github.com/AaronYES/aaPanel/releases/download/1.3/LinuxPanel-7.7.0.zip"
+wget -O "/root/LinuxPanel-7.7.0.zip" "https://github.com/AaronYES/aaPanel/releases/download/1.3/LinuxPanel-7.7.0.zip"
 blue "下载完成,正在降级."
 unzip LinuxPanel-7.7.0.zip
 cd /root/panel
